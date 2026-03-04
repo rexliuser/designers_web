@@ -1,0 +1,1700 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "5sIfo",
+      "x": 0,
+      "y": 0,
+      "name": "Main Page - Designers Listing",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg-white",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "hXTmb",
+          "name": "Header",
+          "width": "fill_container",
+          "fill": "$bg-white",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border-gray"
+          },
+          "padding": [
+            12,
+            48
+          ],
+          "justifyContent": "end",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "syb9R",
+              "name": "Nav Links",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "1vcxG",
+                  "name": "navAbout",
+                  "fill": "$text-primary",
+                  "content": "About",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "pC5NL",
+                  "name": "navContact",
+                  "fill": "$text-primary",
+                  "content": "Contact",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "OEsGu",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "fill": "$bg-white",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            32,
+            48,
+            24,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "PggJX",
+              "name": "Logo",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PNL4J",
+                  "name": "Logo Left",
+                  "width": 100,
+                  "height": 100,
+                  "fill": "#E84210",
+                  "layout": "vertical",
+                  "padding": 10,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "i06XE",
+                      "name": "logoLeftText",
+                      "fill": "#FFFFFF",
+                      "content": "FASHION\nASIA\nHONG KONG",
+                      "lineHeight": 1.3,
+                      "textAlign": "center",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4T9uB",
+                  "name": "Logo Right",
+                  "width": 100,
+                  "height": 100,
+                  "fill": "#FFFFFF",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 2,
+                    "fill": "#E84210"
+                  },
+                  "layout": "vertical",
+                  "gap": 2,
+                  "padding": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kjVQW",
+                      "name": "logoRightTop",
+                      "fill": "#E84210",
+                      "content": "10",
+                      "textAlign": "center",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 28,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uuY5J",
+                      "name": "logoRightBot",
+                      "fill": "#E84210",
+                      "content": "ASIAN\nDESIGNERS\nTO WATCH",
+                      "lineHeight": 1.3,
+                      "textAlign": "center",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 10,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "VSyZX",
+              "name": "Hero Title",
+              "fill": "#E84210",
+              "content": "10 ASIAN DESIGNERS TO WATCH",
+              "textAlign": "center",
+              "fontFamily": "Space Grotesk",
+              "fontSize": 32,
+              "fontWeight": "800",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "dIfRm",
+              "name": "Hero Subtitle",
+              "fill": "#E84210",
+              "content": "2025 POTENTIAL TALENTS",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "Space Grotesk",
+              "fontSize": 18,
+              "fontWeight": "800",
+              "letterSpacing": 4
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "L9Ipn",
+          "name": "Filter Bar",
+          "width": "fill_container",
+          "fill": "$bg-white",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border-gray"
+          },
+          "padding": [
+            0,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "lzi0X",
+              "name": "Tab - ALL",
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                12,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OWsM7",
+                  "name": "tabAllText",
+                  "fill": "$accent-red",
+                  "content": "ALL",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "rectangle",
+                  "id": "ftPq8",
+                  "name": "tabAllLine",
+                  "fill": "$accent-red",
+                  "width": "fill_container",
+                  "height": 3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "4HWEs",
+              "name": "Tab - MAINLAND CHINA",
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                12,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "h5D7J",
+                  "name": "tabChinaText",
+                  "fill": "$text-secondary",
+                  "content": "MAINLAND CHINA",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "P5Me8",
+              "name": "Tab - HONG KONG",
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                12,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "WFzLO",
+                  "name": "tabHKText",
+                  "fill": "$text-secondary",
+                  "content": "HONG KONG",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "9zhqz",
+              "name": "Tab - JAPAN",
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                12,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "T066h",
+                  "name": "tabJapanText",
+                  "fill": "$text-secondary",
+                  "content": "JAPAN",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "o0lMA",
+              "name": "Tab - KOREA",
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                12,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zLbtl",
+                  "name": "tabKoreaText",
+                  "fill": "$text-secondary",
+                  "content": "KOREA",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "X1lEo",
+              "name": "Tab - GEORGIA",
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                12,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tQX7A",
+                  "name": "tabGeorgiaText",
+                  "fill": "$text-secondary",
+                  "content": "GEORGIA",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Ycqx3",
+              "name": "Tab - PHILIPPINES",
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                12,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "lu2iV",
+                  "name": "tabPhilippinesText",
+                  "fill": "$text-secondary",
+                  "content": "PHILIPPINES",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SbZJa",
+              "name": "Tab - SINGAPORE",
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                12,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "572A6",
+                  "name": "tabSingaporeText",
+                  "fill": "$text-secondary",
+                  "content": "SINGAPORE",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "3uVu4",
+              "name": "Tab - THAILAND",
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                12,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xfZgN",
+                  "name": "tabThailandText",
+                  "fill": "$text-secondary",
+                  "content": "THAILAND",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "us5C2",
+              "name": "Tab - VIETNAM",
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                12,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "9mKdq",
+                  "name": "tabVietnamText",
+                  "fill": "$text-secondary",
+                  "content": "VIETNAM",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LC1Q5",
+          "name": "Designer Card Grid",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            24,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "HihgY",
+              "name": "Row 1",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "id": "W61jS",
+                  "type": "ref",
+                  "ref": "d1L6W",
+                  "width": "fill_container",
+                  "name": "c1",
+                  "descendants": {
+                    "c9hr5": {
+                      "content": "ACT N°1"
+                    },
+                    "6d7UV": {
+                      "content": "Italy"
+                    },
+                    "lkPb0": {
+                      "content": "Luca Lin"
+                    },
+                    "hqO65": {
+                      "content": "Merging Italian tailoring with Chinese heritage in bold, sculptural collections."
+                    }
+                  }
+                },
+                {
+                  "id": "r21HV",
+                  "type": "ref",
+                  "ref": "d1L6W",
+                  "width": "fill_container",
+                  "name": "c2",
+                  "descendants": {
+                    "c9hr5": {
+                      "content": "KHOKI"
+                    },
+                    "6d7UV": {
+                      "content": "Japan"
+                    },
+                    "lkPb0": {
+                      "content": "Koki Abe"
+                    },
+                    "hqO65": {
+                      "content": "Exploring deconstruction and memory through understated, conceptual menswear."
+                    }
+                  }
+                },
+                {
+                  "id": "o841Y",
+                  "type": "ref",
+                  "ref": "d1L6W",
+                  "width": "fill_container",
+                  "name": "c3",
+                  "descendants": {
+                    "c9hr5": {
+                      "content": "KIT WAN STUDIOS"
+                    },
+                    "6d7UV": {
+                      "content": "Hong Kong"
+                    },
+                    "lkPb0": {
+                      "content": "Kit Wan"
+                    },
+                    "hqO65": {
+                      "content": "Infusing Hong Kong street culture with experimental pattern cutting and layering."
+                    }
+                  }
+                },
+                {
+                  "id": "LlABq",
+                  "type": "ref",
+                  "ref": "d1L6W",
+                  "width": "fill_container",
+                  "name": "c4",
+                  "descendants": {
+                    "c9hr5": {
+                      "content": "LỰU ĐẠN"
+                    },
+                    "6d7UV": {
+                      "content": "Vietnam"
+                    },
+                    "lkPb0": {
+                      "content": "Hung La"
+                    },
+                    "hqO65": {
+                      "content": "Reimagining Vietnamese traditional garments with contemporary silhouettes and vivid colours."
+                    }
+                  }
+                },
+                {
+                  "id": "9q1vg",
+                  "type": "ref",
+                  "ref": "d1L6W",
+                  "width": "fill_container",
+                  "name": "c5",
+                  "descendants": {
+                    "c9hr5": {
+                      "content": "OSCAR OUYANG"
+                    },
+                    "6d7UV": {
+                      "content": "China"
+                    },
+                    "lkPb0": {
+                      "content": "Oscar Ouyang"
+                    },
+                    "hqO65": {
+                      "content": "Blending Chinese aesthetics with futuristic design language and sustainable practice."
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "7fr4O",
+              "name": "Row 2",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "id": "oIC5X",
+                  "type": "ref",
+                  "ref": "d1L6W",
+                  "width": "fill_container",
+                  "name": "c6",
+                  "descendants": {
+                    "c9hr5": {
+                      "content": "Penultimate"
+                    },
+                    "6d7UV": {
+                      "content": "China"
+                    },
+                    "lkPb0": {
+                      "content": "Xiang Gao"
+                    },
+                    "hqO65": {
+                      "content": "Challenging fashion norms with cross-disciplinary art, architecture-inspired structures."
+                    }
+                  }
+                },
+                {
+                  "id": "WccIl",
+                  "type": "ref",
+                  "ref": "d1L6W",
+                  "width": "fill_container",
+                  "name": "c7",
+                  "descendants": {
+                    "c9hr5": {
+                      "content": "swaying/knit"
+                    },
+                    "6d7UV": {
+                      "content": "Hong Kong"
+                    },
+                    "lkPb0": {
+                      "content": "ShaSha Wong"
+                    },
+                    "hqO65": {
+                      "content": "Hand-knitted artisanal pieces celebrating slow fashion and tactile craftsmanship."
+                    }
+                  }
+                },
+                {
+                  "id": "PNhhw",
+                  "type": "ref",
+                  "ref": "d1L6W",
+                  "width": "fill_container",
+                  "name": "c8",
+                  "descendants": {
+                    "c9hr5": {
+                      "content": "Tamme"
+                    },
+                    "6d7UV": {
+                      "content": "Japan"
+                    },
+                    "lkPb0": {
+                      "content": "Tatsuya Tamada"
+                    },
+                    "hqO65": {
+                      "content": "Minimalist sportswear-inspired design bridging utility and refined Japanese tailoring."
+                    }
+                  }
+                },
+                {
+                  "id": "1aITx",
+                  "type": "ref",
+                  "ref": "d1L6W",
+                  "width": "fill_container",
+                  "name": "c9",
+                  "descendants": {
+                    "c9hr5": {
+                      "content": "young n sang"
+                    },
+                    "6d7UV": {
+                      "content": "Korea"
+                    },
+                    "lkPb0": {
+                      "content": "Youngshin Hong"
+                    },
+                    "hqO65": {
+                      "content": "Poetic, gender-fluid collections drawing from Korean folklore and modern art."
+                    }
+                  }
+                },
+                {
+                  "id": "m9L3r",
+                  "type": "ref",
+                  "ref": "d1L6W",
+                  "width": "fill_container",
+                  "name": "c10",
+                  "descendants": {
+                    "c9hr5": {
+                      "content": "zugma"
+                    },
+                    "6d7UV": {
+                      "content": "Georgia"
+                    },
+                    "lkPb0": {
+                      "content": "Tsotne Sulakvelidze"
+                    },
+                    "hqO65": {
+                      "content": "Georgian avant-garde knitwear fusing traditional Caucasian craft with modern silhouettes."
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DFwYW",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$bg-surface",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "top": 1
+            },
+            "fill": "$border-gray"
+          },
+          "padding": [
+            24,
+            48
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "aL9eI",
+              "name": "footerLeft",
+              "fill": "$text-muted",
+              "content": "© 2026 Fashion Asia Hong Kong. All rights reserved.",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "H3Ffp",
+              "name": "footerRight",
+              "fill": "$text-secondary",
+              "content": "Organised by Hong Kong Design Centre",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "VE1cR",
+      "x": 1540,
+      "y": 0,
+      "name": "Designer Page - Detail",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg-white",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "oC4Z9",
+          "name": "Header",
+          "width": "fill_container",
+          "fill": "$bg-white",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border-gray"
+          },
+          "padding": [
+            16,
+            48
+          ],
+          "justifyContent": "end",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "7sGOW",
+              "name": "Nav Links",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "2LWCs",
+                  "name": "dpNavAbout",
+                  "fill": "$text-primary",
+                  "content": "About",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "GQxNI",
+                  "name": "dpNavContact",
+                  "fill": "$text-primary",
+                  "content": "Contact",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "psacm",
+          "name": "Breadcrumb Bar",
+          "width": "fill_container",
+          "fill": "$bg-surface",
+          "gap": 8,
+          "padding": [
+            14,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "UYDUL",
+              "name": "backIcon",
+              "width": 16,
+              "height": 16,
+              "iconFontName": "chevron-left",
+              "iconFontFamily": "lucide",
+              "fill": "$accent-red"
+            },
+            {
+              "type": "text",
+              "id": "3HhIc",
+              "name": "backText",
+              "fill": "$accent-red",
+              "content": "Back to Designers",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bFpM1",
+          "name": "Content Area",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            40,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "Tpol8",
+              "name": "Designer Info Section",
+              "width": "fill_container",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hlVmG",
+                  "name": "Designer Avatar",
+                  "width": 320,
+                  "height": 320,
+                  "fill": "$bg-surface",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "OQmXe",
+                      "name": "dpAvatarIcon",
+                      "width": 48,
+                      "height": 48,
+                      "iconFontName": "user",
+                      "iconFontFamily": "lucide",
+                      "fill": "#D0D0D0"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HcYe9",
+                  "name": "Info Column",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IaOIc",
+                      "name": "DesignerName",
+                      "fill": "$text-primary",
+                      "content": "Pentagram",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 40,
+                      "fontWeight": "500",
+                      "letterSpacing": -1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "M1z8w",
+                      "name": "Meta Info",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "GrC1N",
+                          "name": "Year Block",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "bqrzZ",
+                              "name": "metaYearLabel",
+                              "fill": "$text-muted",
+                              "content": "Established",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "text",
+                              "id": "HPK0n",
+                              "name": "YearValue",
+                              "fill": "$text-primary",
+                              "content": "1972",
+                              "fontFamily": "Space Grotesk",
+                              "fontSize": 18,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "PlLxX",
+                          "name": "HQ Block",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "gZxuD",
+                              "name": "metaHQLabel",
+                              "fill": "$text-muted",
+                              "content": "Headquarter",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "text",
+                              "id": "B7vHO",
+                              "name": "HQValue",
+                              "fill": "$text-primary",
+                              "content": "New York, USA",
+                              "fontFamily": "Space Grotesk",
+                              "fontSize": 18,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OrOXG",
+                      "name": "Biography Section",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "LWIrH",
+                          "name": "dpBioLabel",
+                          "fill": "$text-muted",
+                          "content": "Biography",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pf38E",
+                          "name": "BiographyText",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Pentagram is the world's largest independently owned design studio. Founded in 1972 in London, the firm has grown into a multi-disciplinary practice with offices in London, New York, San Francisco, Berlin, and Austin. Each partner is a recognized leader in their field, working across branding, architecture, digital, editorial, and environmental design. The studio operates on a unique peer-to-peer model where each partner runs their own team.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KIeby",
+                      "name": "Video Section",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "7qmQs",
+                          "name": "dpVideoIcon",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "circle-play",
+                          "iconFontFamily": "lucide",
+                          "fill": "$accent-red"
+                        },
+                        {
+                          "type": "text",
+                          "id": "MBe39",
+                          "name": "VideoLink",
+                          "fill": "$accent-red",
+                          "content": "Watch Studio Documentary",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "line",
+              "id": "t475L",
+              "name": "divider",
+              "fill": "$border-gray",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "PIs0j",
+              "name": "Image Gallery Section",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "e2puA",
+                  "name": "Gallery Title",
+                  "fill": "$text-primary",
+                  "content": "Portfolio & Work",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 24,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "DxNAf",
+                  "name": "Gallery Grid",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "uVPho",
+                      "name": "Gallery Row 1",
+                      "width": "fill_container",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "poFOJ",
+                          "name": "Image 1",
+                          "width": "fill_container",
+                          "height": 440,
+                          "fill": "$bg-surface",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "H6WQx",
+                              "name": "img1Icon",
+                              "width": 32,
+                              "height": 32,
+                              "iconFontName": "image",
+                              "iconFontFamily": "lucide",
+                              "fill": "#D0D0D0"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "14qPD",
+                          "name": "Image 2",
+                          "width": "fill_container",
+                          "height": 440,
+                          "fill": "$bg-surface",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "KbHQc",
+                              "name": "img2Icon",
+                              "width": 32,
+                              "height": 32,
+                              "iconFontName": "image",
+                              "iconFontFamily": "lucide",
+                              "fill": "#D0D0D0"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "TzRbz",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$bg-surface",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "top": 1
+            },
+            "fill": "$border-gray"
+          },
+          "padding": [
+            24,
+            48
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "SsqYW",
+              "name": "dpFooterLeft",
+              "fill": "$text-muted",
+              "content": "© 2026 Fashion Asia Hong Kong. All rights reserved.",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "bZlxR",
+              "name": "dpFooterRight",
+              "fill": "$text-secondary",
+              "content": "Organised by Hong Kong Design Centre",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "d1L6W",
+      "x": 0,
+      "y": 1350,
+      "name": "Component/DesignerCard",
+      "reusable": true,
+      "width": 248,
+      "fill": "$bg-white",
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "$border-gray"
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "rWR8R",
+          "name": "Thumbnail",
+          "width": "fill_container",
+          "height": 160,
+          "fill": "$bg-surface",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "7AEf5",
+              "name": "PlaceholderIcon",
+              "width": 32,
+              "height": 32,
+              "iconFontName": "image",
+              "iconFontFamily": "lucide",
+              "fill": "#D0D0D0"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "aJQT5",
+          "name": "CardContent",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 6,
+          "padding": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "c9hr5",
+              "name": "DesignerName",
+              "fill": "$text-primary",
+              "content": "Designer Name",
+              "fontFamily": "Space Grotesk",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "Elpb7",
+              "name": "MetaRow",
+              "width": "fill_container",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "6d7UV",
+                  "name": "Year",
+                  "fill": "$text-secondary",
+                  "content": "Est. 2005",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "lkPb0",
+                  "name": "Headquarter",
+                  "fill": "$text-secondary",
+                  "content": "London, UK",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "hqO65",
+              "name": "Biography",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "A brief introduction to this designer's work and philosophy...",
+              "lineHeight": 1.4,
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "JlRV6",
+              "name": "ViewProfileLink",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sjb7l",
+                  "name": "LinkText",
+                  "fill": "$accent-red",
+                  "content": "View Profile",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "OBGbS",
+                  "name": "LinkArrow",
+                  "width": 14,
+                  "height": 14,
+                  "iconFontName": "arrow-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-red"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ZAHJf",
+      "x": 0,
+      "y": 1743,
+      "name": "About Dialog",
+      "clip": true,
+      "width": 600,
+      "fill": "$bg-white",
+      "stroke": {
+        "align": "outside",
+        "thickness": 1,
+        "fill": "$border-gray"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#0D0D0D20",
+        "offset": {
+          "x": 0,
+          "y": 8
+        },
+        "blur": 32
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "by6SE",
+          "name": "Dialog Header",
+          "width": "fill_container",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border-gray"
+          },
+          "padding": [
+            16,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "dCLrM",
+              "name": "aboutTitle",
+              "fill": "$text-primary",
+              "content": "About",
+              "fontFamily": "Space Grotesk",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "icon_font",
+              "id": "G3rMc",
+              "name": "aboutClose",
+              "width": 20,
+              "height": 20,
+              "iconFontName": "x",
+              "iconFontFamily": "lucide",
+              "fill": "$text-muted"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fI7lL",
+          "name": "Dialog Body",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "SF0ZP",
+              "name": "aboutP1",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "10 Asian Designers to Watch is an annual initiative by Fashion Asia Hong Kong, spotlighting the most promising emerging fashion talent across the Asia-Pacific region.",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "CL92h",
+              "name": "aboutP2",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Each year, an esteemed panel of international fashion leaders — including editors, buyers, creative directors, and industry veterans — evaluates a curated shortlist of designers based on creative vision, craftsmanship, cultural relevance, and commercial potential.",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "ekgUU",
+              "name": "aboutP3",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "The selected designers represent the diversity, innovation, and extraordinary talent shaping the future of Asian fashion on the global stage. From experimental knitwear to couture-level tailoring, these are the names redefining what it means to design in Asia today.",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "uAbr6",
+              "name": "aboutP4",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "This platform serves as a digital showcase — browse the collection, learn each designer's story, and discover the next generation of fashion visionaries.",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "0pbRy",
+      "x": 700,
+      "y": 1743,
+      "name": "Contact Dialog",
+      "clip": true,
+      "width": 600,
+      "fill": "$bg-white",
+      "stroke": {
+        "align": "outside",
+        "thickness": 1,
+        "fill": "$border-gray"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#0D0D0D20",
+        "offset": {
+          "x": 0,
+          "y": 8
+        },
+        "blur": 32
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "KNRv5",
+          "name": "Dialog Header",
+          "width": "fill_container",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border-gray"
+          },
+          "padding": [
+            16,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "XBxC7",
+              "name": "contactTitle",
+              "fill": "$text-primary",
+              "content": "Contact",
+              "fontFamily": "Space Grotesk",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "icon_font",
+              "id": "bgoZl",
+              "name": "contactClose",
+              "width": 20,
+              "height": 20,
+              "iconFontName": "x",
+              "iconFontFamily": "lucide",
+              "fill": "$text-muted"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Rqwf3",
+          "name": "Dialog Body",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "TwvD7",
+              "name": "contactP1",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Fashion Asia Hong Kong is organised by Hong Kong Design Centre (HKDC), a non-governmental organisation established in 2001 to champion design and innovation.",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "OSPGa",
+              "name": "Email Row",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "UugRG",
+                  "name": "contactEmailIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "mail",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-red"
+                },
+                {
+                  "type": "text",
+                  "id": "ATFME",
+                  "name": "contactEmail",
+                  "fill": "$text-primary",
+                  "content": "fashionasia@hkdesigncentre.org",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ycxvR",
+              "name": "Phone Row",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "hNwZj",
+                  "name": "contactPhoneIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "phone",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-red"
+                },
+                {
+                  "type": "text",
+                  "id": "z94h0",
+                  "name": "contactPhone",
+                  "fill": "$text-primary",
+                  "content": "+852 2522 8688",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dGKym",
+              "name": "WhatsApp Row",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "bsf3u",
+                  "name": "contactWAIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "message-circle",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent-red"
+                },
+                {
+                  "type": "text",
+                  "id": "Be0pV",
+                  "name": "contactWA",
+                  "fill": "$text-primary",
+                  "content": "WhatsApp: +852 6219 3072",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Lyk9b",
+              "name": "Social Row",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "27uIH",
+                  "name": "socialFB",
+                  "width": 20,
+                  "height": 20,
+                  "iconFontName": "facebook",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-secondary"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "2AU81",
+                  "name": "socialIG",
+                  "width": 20,
+                  "height": 20,
+                  "iconFontName": "instagram",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-secondary"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "eVVf5",
+                  "name": "socialYT",
+                  "width": 20,
+                  "height": 20,
+                  "iconFontName": "youtube",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-secondary"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "ttTtc",
+                  "name": "socialLI",
+                  "width": 20,
+                  "height": 20,
+                  "iconFontName": "linkedin",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-secondary"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent-red": {
+      "type": "color",
+      "value": "#E42313"
+    },
+    "bg-surface": {
+      "type": "color",
+      "value": "#FAFAFA"
+    },
+    "bg-white": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "border-gray": {
+      "type": "color",
+      "value": "#E8E8E8"
+    },
+    "page-width": {
+      "type": "number",
+      "value": 1440
+    },
+    "success-green": {
+      "type": "color",
+      "value": "#22C55E"
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#B0B0B0"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#0D0D0D"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#7A7A7A"
+    }
+  }
+}
