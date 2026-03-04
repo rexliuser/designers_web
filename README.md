@@ -1,14 +1,16 @@
-# PPT Web Project
+# flutter_web
 
-## Folder Structure
+A new Flutter project.
 
-### `assets/`
-Directory for storing images and other media assets. Images should be organized by designer name.
+## Getting Started
 
-**Path structure:** `/assets/{designer_name}/someimage.jpg`
+This project is a starting point for a Flutter application.
 
-### `web_layout_pages_documentation/`
-Contains documentation of all pages and their UI designs created in Pencil. This directory lists out each page specification and the corresponding Pencil design files.
+A few resources to get you started if this is your first Flutter project:
 
-### `flutter_web/`
-Folder for the Flutter web project. To be implemented later.
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
