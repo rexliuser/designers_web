@@ -76,12 +76,12 @@ class _MainPageState extends State<MainPage> {
                   _buildFilterBar(),
                   // 4. Designer Card Grid
                   _buildDesignerGrid(designers),
-                  // 5. Footer
-                  const AppFooter(),
                 ],
               ),
             ),
           ),
+          // 5. Footer — always pinned to bottom
+          const AppFooter(),
         ],
       ),
     );

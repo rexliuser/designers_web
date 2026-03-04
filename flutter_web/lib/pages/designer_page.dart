@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lucide_icons/lucide_icons.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../components/app_footer.dart';
 import '../components/app_header.dart';
@@ -14,6 +15,16 @@ class DesignerPage extends StatelessWidget {
   final VoidCallback onBack;
 
   const DesignerPage({super.key, required this.designer, required this.onBack});
+
+  Future<void> _launchVideoUrl() async {
+    final url = designer.videoUrl;
+    if (url != null && url.isNotEmpty) {
+      final uri = Uri.parse(url);
+      if (await canLaunchUrl(uri)) {
+        await launchUrl(uri, mode: LaunchMode.externalApplication);
+      }
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,21 +43,21 @@ class DesignerPage extends StatelessWidget {
               builder: (_) => const app_dialogs_contact.ContactDialog(),
             ),
           ),
+          // 2. Breadcrumb Bar — always visible on top
+          _buildBreadcrumbBar(),
           // Scrollable content
           Expanded(
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  // 2. Breadcrumb Bar
-                  _buildBreadcrumbBar(),
                   // 3. Content Area
                   _buildContentArea(),
-                  // 4. Footer
-                  const AppFooter(),
                 ],
               ),
             ),
           ),
+          // 4. Footer — always pinned to bottom
+          const AppFooter(),
         ],
       ),
     );
@@ -57,6 +68,7 @@ class DesignerPage extends StatelessWidget {
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: onBack,
+        behavior: HitTestBehavior.opaque,
         child: Container(
           width: double.infinity,
           padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 14),
@@ -132,7 +144,7 @@ class DesignerPage extends StatelessWidget {
             children: [
               // Designer Name
               Text(
-                designer.name,
+                designer.name ?? '',
                 style: GoogleFonts.spaceGrotesk(
                   fontSize: 40,
                   fontWeight: FontWeight.w500,
@@ -145,99 +157,112 @@ class DesignerPage extends StatelessWidget {
               Row(
                 children: [
                   // Year Block
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Established',
-                        style: GoogleFonts.inter(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w500,
-                          color: AppColors.textMuted,
+                  if (designer.year != null)
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Established',
+                          style: GoogleFonts.inter(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500,
+                            color: AppColors.textMuted,
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        designer.year,
-                        style: GoogleFonts.spaceGrotesk(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w600,
-                          color: AppColors.textPrimary,
+                        const SizedBox(height: 4),
+                        Text(
+                          designer.year!,
+                          style: GoogleFonts.spaceGrotesk(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w600,
+                            color: AppColors.textPrimary,
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(width: 32),
+                      ],
+                    ),
+                  if (designer.year != null && designer.headquarter != null)
+                    const SizedBox(width: 32),
                   // HQ Block
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Headquarter',
-                        style: GoogleFonts.inter(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w500,
-                          color: AppColors.textMuted,
+                  if (designer.headquarter != null)
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Headquarter',
+                          style: GoogleFonts.inter(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500,
+                            color: AppColors.textMuted,
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        designer.headquarter,
-                        style: GoogleFonts.spaceGrotesk(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w600,
-                          color: AppColors.textPrimary,
+                        const SizedBox(height: 4),
+                        Text(
+                          designer.headquarter!,
+                          style: GoogleFonts.spaceGrotesk(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w600,
+                            color: AppColors.textPrimary,
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
+                      ],
+                    ),
                 ],
               ),
               const SizedBox(height: 20),
               // Biography Section
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Biography',
-                    style: GoogleFonts.spaceGrotesk(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w600,
-                      color: AppColors.textMuted,
+              if (designer.biography != null)
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Biography',
+                      style: GoogleFonts.spaceGrotesk(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                        color: AppColors.textMuted,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    designer.biography,
-                    style: GoogleFonts.inter(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400,
-                      height: 1.5,
-                      color: AppColors.textSecondary,
+                    const SizedBox(height: 8),
+                    Text(
+                      designer.biography!,
+                      style: GoogleFonts.inter(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400,
+                        height: 1.5,
+                        color: AppColors.textSecondary,
+                      ),
                     ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 20),
+                  ],
+                ),
+              if (designer.biography != null) const SizedBox(height: 20),
               // Video Section
-              Row(
-                children: [
-                  const Icon(
-                    LucideIcons.playCircle,
-                    size: 20,
-                    color: AppColors.accentRed,
-                  ),
-                  const SizedBox(width: 12),
-                  Text(
-                    'Watch Studio Documentary',
-                    style: GoogleFonts.spaceGrotesk(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w500,
-                      color: AppColors.accentRed,
+              if (designer.videoUrl != null && designer.videoUrl!.isNotEmpty)
+                MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  child: GestureDetector(
+                    onTap: _launchVideoUrl,
+                    behavior: HitTestBehavior.opaque,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const Icon(
+                          LucideIcons.playCircle,
+                          size: 20,
+                          color: AppColors.accentRed,
+                        ),
+                        const SizedBox(width: 12),
+                        Text(
+                          'Watch Studio Documentary',
+                          style: GoogleFonts.spaceGrotesk(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500,
+                            color: AppColors.accentRed,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                ],
-              ),
+                ),
             ],
           ),
         ),
@@ -246,6 +271,7 @@ class DesignerPage extends StatelessWidget {
   }
 
   Widget _buildImageGallerySection() {
+    final images = designer.images;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -259,16 +285,64 @@ class DesignerPage extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 24),
-        // Gallery Grid — 2 rows of 2 images
-        Column(
-          children: [
-            _buildGalleryRow(),
-            const SizedBox(height: 20),
-            _buildGalleryRow(),
-          ],
-        ),
+        // Gallery Grid
+        if (images != null && images.isNotEmpty)
+          _buildImageGridFromUrls(images)
+        else
+          // Placeholder 2×2 grid
+          Column(
+            children: [
+              _buildGalleryRow(),
+              const SizedBox(height: 20),
+              _buildGalleryRow(),
+            ],
+          ),
       ],
     );
+  }
+
+  Widget _buildImageGridFromUrls(List<String> images) {
+    final List<Widget> rows = [];
+    for (int i = 0; i < images.length; i += 2) {
+      final hasSecond = i + 1 < images.length;
+      if (rows.isNotEmpty) {
+        rows.add(const SizedBox(height: 20));
+      }
+      rows.add(
+        Row(
+          children: [
+            Expanded(
+              child: Container(
+                height: 440,
+                decoration: BoxDecoration(
+                  color: AppColors.bgSurface,
+                  image: DecorationImage(
+                    image: NetworkImage(images[i]),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(width: 20),
+            Expanded(
+              child: hasSecond
+                  ? Container(
+                      height: 440,
+                      decoration: BoxDecoration(
+                        color: AppColors.bgSurface,
+                        image: DecorationImage(
+                          image: NetworkImage(images[i + 1]),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    )
+                  : _buildImagePlaceholder(),
+            ),
+          ],
+        ),
+      );
+    }
+    return Column(children: rows);
   }
 
   Widget _buildGalleryRow() {
