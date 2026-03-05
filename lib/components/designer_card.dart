@@ -26,16 +26,23 @@ class DesignerCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // 1. Thumbnail
-              Container(
-                height: 160,
-                width: double.infinity,
-                color: AppColors.bgSurface,
-                alignment: Alignment.center,
-                child: const Icon(
-                  LucideIcons.image,
-                  size: 32,
-                  color: AppColors.placeholderIcon,
-                ),
+              AspectRatio(
+                aspectRatio: 1,
+                child: designer.profileImage != null
+                    ? Image.asset(
+                        designer.profileImage!,
+                        width: double.infinity,
+                        fit: BoxFit.cover,
+                      )
+                    : Container(
+                        color: AppColors.bgSurface,
+                        alignment: Alignment.center,
+                        child: const Icon(
+                          LucideIcons.image,
+                          size: 32,
+                          color: AppColors.placeholderIcon,
+                        ),
+                      ),
               ),
               // 2. Card Content
               Padding(

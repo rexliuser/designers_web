@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -7,12 +8,12 @@ import '../components/designer_card.dart';
 import '../dialogs/about_dialog.dart' as app_dialogs;
 import '../dialogs/contact_dialog.dart' as app_dialogs_contact;
 import '../models/designer.dart';
+import '../router/app_router.dart';
 import '../theme/app_colors.dart';
 
+@RoutePage()
 class MainPage extends StatefulWidget {
-  final void Function(Designer designer) onDesignerTap;
-
-  const MainPage({super.key, required this.onDesignerTap});
+  const MainPage({super.key});
 
   @override
   State<MainPage> createState() => _MainPageState();
@@ -186,7 +187,6 @@ class _MainPageState extends State<MainPage> {
   Widget _buildFilterBar() {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.symmetric(horizontal: 48),
       decoration: const BoxDecoration(
         color: AppColors.bgWhite,
         border: Border(
@@ -262,7 +262,8 @@ class _MainPageState extends State<MainPage> {
                 width: cardWidth,
                 child: DesignerCard(
                   designer: designer,
-                  onTap: () => widget.onDesignerTap(designer),
+                  onTap: () =>
+                      context.pushRoute(DesignerRoute(designerId: designer.id)),
                 ),
               );
             }).toList(),
